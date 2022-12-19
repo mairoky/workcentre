@@ -1,0 +1,45 @@
+footer {
+    padding: 2rem 0;
+    background: var(--secondary-color);
+}
+
+.footer-top {
+    padding-top: 1.5rem;
+    color: var(--primary-color);
+}
+
+.footer-top ul li a,
+.footer-bottom p,
+.footer-bottom p a,
+ul.footer-bottom-social li a {
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.footer-top ul li a:hover {
+    color: var(--tan);
+}
+
+.footer-bottom {
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--tan);
+}
+
+.footer-bottom p a:hover {
+    color: var(--tan);
+}
+
+ul.footer-bottom-social {
+    padding: 0;
+    margin: 0;
+}
+
+ul.footer-bottom-social li {
+    display: inline-block;
+    margin-right: 17px;
+    margin-top: 0;
+}
+
+ul.footer-bottom-social li a:hover {
+    color: var(--tan);
+}
