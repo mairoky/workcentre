@@ -28,7 +28,8 @@ section.banner {
 }
 
 .banner-content h1 {
-    font-size: 4rem;
+    font-size: 3rem;
+    color: var(--primary-color);
 }
 
 .banner-content p {

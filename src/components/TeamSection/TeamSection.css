@@ -1,0 +1,86 @@
+section.team {
+    margin: 6rem 0;
+}
+
+.team-slider .slick-list {
+    margin-left: -7px;
+}
+
+.team-slider .slick-slide>div {
+    margin-left: 7px;
+}
+
+.team-slider ul.slick-dots {
+    bottom: 0;
+    position: relative;
+    margin-top: 0.8rem;
+}
+
+.team-slider ul.slick-dots>li {
+    background: #f7f7f7;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.team-slider ul.slick-dots>li.slick-active {
+    background-color: teal;
+}
+
+.team-slider ul.slick-dots>li>button {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+}
+
+.team-slider ul.slick-dots>li>button:before {
+    content: none;
+}
+
+.team-member {
+    position: relative;
+    cursor: pointer;
+}
+
+.team-member img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.team-member-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .5s linear;
+    background-color: rgba(33, 34, 38, .9);
+}
+
+.team-member:hover .team-member-overlay {
+    opacity: 1;
+}
+
+.team-member-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.team-member-info h4,
+.team-member-info p,
+.team-member-info ul li a {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}

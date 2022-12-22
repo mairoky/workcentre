@@ -28,10 +28,11 @@ const ContactSection = () => {
                                 <p className='mb-0'>73 green filed road , first floor, E1 1EJ</p>
                             </div>
                             <ul className="social-list p-0 mb-5">
+                                {/* TODO Add Social Link */}
                                 <li><Link><FaFacebookSquare /></Link></li>
                                 <li><Link><FaTwitterSquare /></Link></li>
-                                <li><Link><FaInstagramSquare /></Link></li>
                                 <li><Link><FaLinkedin /></Link></li>
+                                <li><Link><FaInstagramSquare /></Link></li>
                             </ul>
                         </div>
                     </div>
@@ -59,7 +60,7 @@ const ContactSection = () => {
                                     </div>
                                 </div>
                                 <button
-                                    className='btn btn-general contact-btn' type="submit">
+                                    className='btn btn-general mt-3 fw-semibold' type="submit">
                                     Submit
                                 </button>
                             </form>

@@ -5,6 +5,7 @@
   --primary-color: #f0f0f0;
   --secondary-color: #1c1c1c;
   --font-color: #121212;
+  --heading-color: #121443;
   --tan: #cebb85;
   --tuatara: #3c3c3a;
   --tobacco-brown: #706345;
@@ -38,6 +39,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--heading-color);
+}
+
 ul {
   list-style-type: none;
 }
@@ -61,10 +70,9 @@ textarea.form-control:focus {
 
 .btn-general {
   padding: 0.6rem 2.2rem;
-  text-transform: uppercase;
-  background-color: var(--tan);
-  color: var(--font-color);
-  border: 1px solid var(--tan);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
   border-radius: 50px;
   transition: var(--transition);
 }
@@ -72,9 +80,9 @@ textarea.form-control:focus {
 .btn-general:hover,
 .btn-general:active,
 .btn-general:focus {
-  color: var(--tan);
+  color: var(--secondary-color);
   background-color: transparent;
-  border-color: var(--tan);
+  border-color: var(--secondary-color);
 }
 
 .btn-general-outline {
@@ -91,4 +99,47 @@ textarea.form-control:focus {
 .btn-general-outline:focus {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+ul.social-list li {
+  display: inline-block;
+  padding: 0;
+  margin-right: 0.6rem;
+}
+
+ul.social-list li a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 32px;
+  color: var(--font-color);
+  border: 1px solid var(--font-color);
+  border-radius: 50%;
+  text-align: center;
+  transition: var(--transition);
+}
+
+ul.social-list li:nth-child(1) a:hover,
+ul.social-list li:nth-child(2) a:hover,
+ul.social-list li:nth-child(3) a:hover,
+ul.social-list li:nth-child(4) a:hover {
+  color: var(--primary-color);
+  border-color: transparent;
+}
+
+ul.social-list li:nth-child(1) a:hover {
+  background: #3b5998;
+}
+
+ul.social-list li:nth-child(2) a:hover {
+  background: #00aced;
+}
+
+ul.social-list li:nth-child(3) a:hover {
+  background: #0072b1;
+}
+
+ul.social-list li:nth-child(4) a:hover {
+  background: #E1306C;
 }

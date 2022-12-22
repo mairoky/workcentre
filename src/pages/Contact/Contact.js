@@ -4,7 +4,7 @@ import ContactSection from '../../components/ContactSection/ContactSection';
 
 const Contact = () => {
     const heading = "Contact Us";
-    const shortDes = "Feel Free to ask us any questions or let's do to talk about future opportunities.";
+    const shortDes = "Feel Free to ask us any questions or let's talk about future opportunities.";
     return (
         <div>
             {/* Contact Banner */}

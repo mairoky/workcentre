@@ -2,47 +2,6 @@ section.contact {
     padding: 6rem 0;
 }
 
-.contact-left ul.social-list li {
-    display: inline-block;
-    margin-right: 0.6rem;
-}
-
-.contact-left ul.social-list li a {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    line-height: 32px;
-    color: var(--font-color);
-    border: 1px solid var(--font-color);
-    border-radius: 50%;
-    text-align: center;
-    transition: var(--transition);
-}
-
-.contact-left ul.social-list li:nth-child(1) a:hover,
-.contact-left ul.social-list li:nth-child(2) a:hover,
-.contact-left ul.social-list li:nth-child(3) a:hover,
-.contact-left ul.social-list li:nth-child(4) a:hover {
-    color: var(--primary-color);
-    border-color: transparent;
-}
-
-.contact-left ul.social-list li:nth-child(1) a:hover {
-    background: #3b5998;
-}
-
-.contact-left ul.social-list li:nth-child(2) a:hover {
-    background: #00aced;
-}
-
-.contact-left ul.social-list li:nth-child(3) a:hover {
-    background: #E1306C;
-}
-
-.contact-left ul.social-list li:nth-child(4) a:hover {
-    background: #0072b1;
-}
-
 .contact-right {
     padding: 1.5rem 2rem;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
@@ -57,8 +16,4 @@ section.contact {
 
 .contact-right form textarea {
     min-height: 150px;
-}
-
-.contact-btn {
-    margin-top: 1rem;
 }

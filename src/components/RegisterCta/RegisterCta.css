@@ -1,0 +1,13 @@
+section.register-cta {
+    margin-bottom: 6rem;
+}
+
+.cta-container {
+    max-height: 400px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.cta-container h1 {
+    color: var(--primary-color);
+}
