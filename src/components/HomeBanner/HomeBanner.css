@@ -1,0 +1,20 @@
+.home-banner {
+    background-image: url(../../assets/images/home/banner-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 4rem 0;
+}
+
+.home-banner-content .home-p1 {
+    background-color: var(--tan);
+    color: var(--primary-color);
+}
+
+.home-banner-content h1 {
+    font-size: 4rem;
+}
+
+.home-banner-content h1 span {
+    color: var(--tan);
+}

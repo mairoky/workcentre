@@ -30,7 +30,7 @@ const About = () => {
                     <div className="row mt-5">
                         <div className="col-md-6 d-flex align-items-lg-center">
                             <div className="p-3">
-                                <h2 className='fw-semibold'>Our Values</h2>
+                                <h2 className='fw-semibold text-center'>Our Values</h2>
                                 <div className="values">
                                     <p><span><FaArrowAltCircleRight /></span> Consider honesty as the key to a business’ trustworthiness and integrity.</p>
                                     <p><span><FaArrowAltCircleRight /></span> Always do the right thing to solve the customer’s problem.</p>
