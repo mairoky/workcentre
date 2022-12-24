@@ -14,19 +14,20 @@ const AboutSection = () => {
                     <div className="col-lg-7 col-md-7 col-12 about-content d-flex align-items-lg-center">
                         <div className="p-lg-5 p-md-4 p-3">
                             <h1>Some Fine <br />Words <strong>About Us</strong></h1>
+                            <h4>Finding The Jobs That You Have Been Dreaming</h4>
                             <p className='mb-4'>We started off as a small 2 men army offering dedicated plumbing solutions in the neighborhood. This then expanded into a larger team offering a wider range of services at affordable prices. Whether it’s repair or replacement, we make sure it’s done well.</p>
                             <div className="row">
                                 <div className="col-lg-4 col-6">
-                                    <h3>3.2K+</h3>
-                                    <p>Online Course</p>
+                                    <h3 className='fw-semibold'>300+</h3>
+                                    <p>Happy Clients</p>
                                 </div>
                                 <div className="col-lg-4 col-6">
-                                    <h3>600+</h3>
-                                    <p>Expert Member</p>
+                                    <h3 className='fw-semibold'>100+</h3>
+                                    <p>Affiliated Company</p>
                                 </div>
                                 <div className="col-lg-4 col-6">
-                                    <h3>2K+</h3>
-                                    <p>Rating &amp; Review</p>
+                                    <h3>500+</h3>
+                                    <p>Job Offers</p>
                                 </div>
                             </div>
                             <div className="more-btn mt-1">

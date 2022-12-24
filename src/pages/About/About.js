@@ -5,6 +5,7 @@ import AboutImage from '../../assets/images/about/about-work.jpg';
 import WorkValues from '../../assets/images/about/work-values.jpg';
 import { FaArrowAltCircleRight } from 'react-icons/fa';
 import './About.css';
+import { Link } from 'react-router-dom';
 
 const About = () => {
     const heading = "About Us";
@@ -22,8 +23,9 @@ const About = () => {
                         </div>
                         <div className="col-lg-8 col-md-6">
                             <div className="about-right">
-                                <p>We started off as a small 2 men army offering dedicated plumbing solutions in the neighborhood. This then expanded into a larger team offering a wider range of services at affordable prices. Whether it’s repair or replacement, we make sure it’s done well.</p>
+                                <p>Whether you are looking at what’s next for your career or have an immediate gap to fill, as market leader we remain committed to working together with you. Our recruiting experts offer invaluable advice and insights, combined with unrivalled services and access to the top employers and talent. As your lifelong career partner, we’ll support your skills development and help you to navigate the new era of work.</p>
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odio ad alias saepe error tempore, officia architecto eum, sint fuga placeat temporibus numquam.</p>
+                                <Link to='/contact' className='btn btn-general fw-semibold'>Request Callback</Link>
                             </div>
                         </div>
                     </div>
