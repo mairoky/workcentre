@@ -1,0 +1,55 @@
+section.stats-section {
+    background: url(../../assets/images/stats/stats-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 6rem;
+}
+
+.stats-overlay {
+    background: rgba(0, 0, 0, .5);
+    padding: 6rem 0;
+}
+
+.stats-overlay h1 {
+    color: var(--primary-color);
+}
+
+.stats-item {
+    background: rgba(61, 68, 68, 0.6);
+    border-radius: 8px;
+    min-height: 180px;
+    padding: 25px 30px;
+    transition: all .5s linear;
+}
+
+.stats-item svg {
+    font-size: 3rem;
+    color: var(--tan);
+    margin: 0 0 6px 0;
+    transition: all .5s linear;
+}
+
+.stats-item h3,
+.stats-item p {
+    color: var(--primary-color);
+}
+
+.stats-item h3 {
+    margin: 0.4rem 0;
+    font-weight: 600;
+}
+
+.stats-item p {
+    margin: 0;
+}
+
+.stats-item:hover {
+    background: var(--tan);
+}
+
+.stats-item:hover svg {
+    color: var(--secondary-color);
+    transform: translateY(-12px);
+}

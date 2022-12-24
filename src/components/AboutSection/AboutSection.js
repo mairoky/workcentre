@@ -18,15 +18,15 @@ const AboutSection = () => {
                             <p className='mb-4'>We started off as a small 2 men army offering dedicated plumbing solutions in the neighborhood. This then expanded into a larger team offering a wider range of services at affordable prices. Whether it’s repair or replacement, we make sure it’s done well.</p>
                             <div className="row">
                                 <div className="col-lg-4 col-6">
-                                    <h3 className='fw-semibold'>300+</h3>
-                                    <p>Happy Clients</p>
+                                    <h3 className='fw-semibold'>1.2k+</h3>
+                                    <p>Happy Users</p>
                                 </div>
                                 <div className="col-lg-4 col-6">
                                     <h3 className='fw-semibold'>100+</h3>
                                     <p>Affiliated Company</p>
                                 </div>
                                 <div className="col-lg-4 col-6">
-                                    <h3>500+</h3>
+                                    <h3 className='fw-semibold'>500+</h3>
                                     <p>Job Offers</p>
                                 </div>
                             </div>
