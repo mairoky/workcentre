@@ -1,0 +1,48 @@
+.home-service-card {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 10px 0;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.home-service-card::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: "";
+    background-color: #222;
+    opacity: 0.2;
+    transition: 0.3s ease-out;
+    z-index: 12;
+}
+
+.home-service-card img {
+    transition: transform 0.35s ease-out;
+}
+
+.home-service-card:hover img {
+    transform: scale(1.09);
+}
+
+.home-service-info {
+    position: absolute;
+    z-index: 13;
+    width: auto;
+    font-weight: 500;
+    color: var(--primary-color);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 15px 15px;
+    left: 15px;
+    right: 15px;
+    text-align: center;
+    bottom: 15px;
+    top: initial;
+    background-color: rgba(33, 34, 38, 0.2);
+}
