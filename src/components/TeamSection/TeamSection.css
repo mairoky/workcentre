@@ -10,36 +10,6 @@ section.team {
     margin-left: 7px;
 }
 
-.team-slider ul.slick-dots {
-    bottom: 0;
-    position: relative;
-    margin-top: 0.8rem;
-}
-
-.team-slider ul.slick-dots>li {
-    background: #f7f7f7;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-}
-
-.team-slider ul.slick-dots>li.slick-active {
-    background-color: teal;
-}
-
-.team-slider ul.slick-dots>li>button {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: transparent;
-    border: none;
-}
-
-.team-slider ul.slick-dots>li>button:before {
-    content: none;
-}
-
 .team-member {
     position: relative;
     cursor: pointer;

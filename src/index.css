@@ -143,3 +143,39 @@ ul.social-list li:nth-child(3) a:hover {
 ul.social-list li:nth-child(4) a:hover {
   background: #E1306C;
 }
+
+/*Slick Slider CSS */
+.testimonial-slider ul.slick-dots,
+.team-slider ul.slick-dots {
+  bottom: 0;
+  position: relative;
+  margin-top: 0.8rem;
+}
+
+.testimonial-slider ul.slick-dots>li,
+.team-slider ul.slick-dots>li {
+  background: #f7f7f7;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.testimonial-slider ul.slick-dots>li.slick-active,
+.team-slider ul.slick-dots>li.slick-active {
+  background-color: teal;
+}
+
+.testimonial-slider ul.slick-dots>li>button,
+.team-slider ul.slick-dots>li>button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+}
+
+.testimonial-slider ul.slick-dots>li>button::before,
+.team-slider ul.slick-dots>li>button::before {
+  content: none;
+}

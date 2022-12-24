@@ -1,0 +1,18 @@
+.testimonial-item {
+    padding: 1rem 2.5rem 0 2.5rem;
+    color: var(--primary-color);
+}
+
+.testimonial-item .row {
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-item h3 {
+    color: var(--tan);
+}
+
+.testimonial-item .stars {
+    font-size: 1.5rem;
+    color: var(--tan);
+    margin: 0 0 8px 0;
+}
