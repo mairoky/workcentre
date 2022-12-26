@@ -10,7 +10,7 @@ const FeaturesSection = () => {
         <section className='features-section'>
             <div className="container">
                 <div className="row g-3 align-items-center">
-                    <div className="col-md-6 col-12">
+                    <div className="col-lg-6 col-12">
                         <div className="features-content">
                             <h1>Why <strong>Choose</strong> Us</h1>
                             <h4>Giving The Job Opportunity That Fits With Your Profile.</h4>
@@ -41,8 +41,8 @@ const FeaturesSection = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 col-12">
-                        <div className="features-image">
+                    <div className="col-lg-6 col-12">
+                        <div className="features-image text-md-center">
                             <img className='img-fluid rounded' src={FeaturesImage} alt="work centre" />
                         </div>
                     </div>

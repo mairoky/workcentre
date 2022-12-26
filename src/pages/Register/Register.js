@@ -13,7 +13,7 @@ const Register = () => {
     return (
         <section className='register'>
             <div className="container">
-                <div className="row g-3 align-items-lg-center">
+                <div className="row g-3 align-items-center">
                     <div className="col-lg-6 col-md-5 col-12">
                         <div className="register-image">
                             <img className='img-fluid' src={RegisterImage} alt="Work Centre" />
@@ -24,7 +24,7 @@ const Register = () => {
                             <form onSubmit={handleSubmit(handleRegister)}>
                                 <div className="card-body">
                                     <div className="text-center">
-                                        <h3>Create Account</h3>
+                                        <h3 className='fw-semibold'>Create Account</h3>
                                     </div>
                                     <hr />
                                     <div className="form-group mt-2">

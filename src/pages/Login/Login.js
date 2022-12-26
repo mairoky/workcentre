@@ -20,13 +20,13 @@ const Login = () => {
     return (
         <section className='login'>
             <div className="container">
-                <div className="row g-3 align-items-lg-center">
+                <div className="row g-3 align-items-center">
                     <div className="col-lg-6 col-md-7 col-12">
                         <div className="card border-0 py-4">
                             <form onSubmit={handleSubmit(handleLogin)}>
                                 <div className="card-body">
                                     <div className="text-center">
-                                        <h3>Login</h3>
+                                        <h3 className='fw-semibold'>Login</h3>
                                     </div>
                                     <hr />
                                     <div className="form-group mt-2">
