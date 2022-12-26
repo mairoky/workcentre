@@ -9,12 +9,14 @@
 .home-banner-content .home-p1 {
     background-color: var(--secondary-color);
     color: var(--primary-color);
+    font-size: 14px;
 }
 
 .home-banner-content h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 .home-banner-content h1 span {
-    color: var(--tan);
+    background-color: var(--tan);
+    color: var(--primary-color);
 }

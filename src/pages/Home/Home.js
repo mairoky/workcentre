@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutSection from '../../components/AboutSection/AboutSection';
 import ContactCta from '../../components/ContactCta/ContactCta';
+import FeaturesSection from '../../components/FeaturesSection/FeaturesSection';
 import HomeBanner from '../../components/HomeBanner/HomeBanner';
 import RegisterCta from '../../components/RegisterCta/RegisterCta';
 import ServicesSection from '../../components/ServicesSection/ServicesSection';
@@ -14,6 +15,7 @@ const Home = () => {
             <ServicesSection />
             <RegisterCta />
             <AboutSection />
+            <FeaturesSection />
             <StatsSection />
             <TestimonialSection />
             <ContactCta />

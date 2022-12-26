@@ -31,7 +31,7 @@ const StatsSection = () => {
                             <div className="stats-item text-center">
                                 <FaTrophy />
                                 <h3 className="counter">23</h3>
-                                <p>Awards Received</p>
+                                <p>Awards</p>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-3 col-6">
