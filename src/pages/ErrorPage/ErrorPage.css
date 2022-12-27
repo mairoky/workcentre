@@ -1,0 +1,27 @@
+section.error-page {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../assets/images/error/error.svg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.error-page-container {
+    background: rgba(110, 110, 110, 0.3);
+}
+
+.content-box h1 {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.content-box h3 {
+    font-size: 2rem;
+}
+
+.content-box h1,
+.content-box h3,
+.content-box p {
+    color: var(--font-color);
+}
