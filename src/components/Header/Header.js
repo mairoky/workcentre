@@ -29,7 +29,7 @@ const Header = () => {
                     </li>
                 </ul>
                 <div className='btn-group'>
-                    <button className='btn btn-general-outline'>Login</button>
+                    <Link to='/login' className='btn btn-general-outline'>Login</Link>
                 </div>
                 <div className='hamburger' onClick={handleClick}>
                     {open ? (<FaTimes size={20} style={{ color: '#f0f0f0' }} />) : (<FaBars size={20} style={{ color: '#f0f0f0' }} />)}

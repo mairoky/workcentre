@@ -1,28 +1,63 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { GoogleAuthProvider } from 'firebase/auth';
+import { AuthContext } from '../../context/AuthProvider';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FaGoogle } from 'react-icons/fa';
 import LoginImage from '../../assets/images/process-01.png';
 import './Login.css';
+import { toast } from 'react-hot-toast';
 
 const Login = () => {
+    // Get Auth Context Data
+    const { loginUser, socialLogin, setLoading } = useContext(AuthContext);
+
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
+
+    const [loginUserEmail, setLoginUserEmail] = useState('');
+
+    const googleProvider = new GoogleAuthProvider();
+
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/';
 
     // Handle Login Form
     const handleLogin = (data) => {
-
+        // console.log(data);
+        const { email, password } = data;
+        loginUser(email, password)
+            .then(result => {
+                const user = result.user;
+                // console.log(user);
+                setLoginUserEmail(email);
+                navigate(from, { replace: true });
+                reset();
+            })
+            .catch(err => {
+                console.error(err.message);
+                toast.error(err.message);
+            })
+            .finally(() => {
+                setLoading(false);
+            })
     }
     // Handle Google Login
     const handleGoogleLogIn = () => {
-
+        socialLogin(googleProvider)
+            .then(result => {
+                const user = result.user;
+                // saveUserToDB(user?.displayName, user?.email);
+            })
+            .catch(err => console.error(err))
     }
 
     return (
         <section className='login'>
             <div className="container">
                 <div className="row g-3 align-items-center">
-                    <div className="col-lg-6 col-md-7 col-12">
-                        <div className="card border-0 py-4">
+                    <div className="col-md-7 col-12">
+                        <div className="card border-0">
                             <form onSubmit={handleSubmit(handleLogin)}>
                                 <div className="card-body">
                                     <div className="text-center">
@@ -51,7 +86,7 @@ const Login = () => {
                             </form>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-md-5 col-12">
+                    <div className="col-md-5 col-12">
                         <div className="login-image">
                             <img className='img-fluid' src={LoginImage} alt="work centre" />
                         </div>
