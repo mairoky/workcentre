@@ -4,6 +4,7 @@ import { toast } from 'react-hot-toast';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import RegisterImage from '../../assets/images/process-02.png';
 import { AuthContext } from '../../context/AuthProvider';
+import { saveUserToDB } from '../../utilities/saveUserToDB';
 import './Register.css';
 
 const Register = () => {
@@ -17,6 +18,7 @@ const Register = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const from = location.state?.from?.pathname || '/';
+
     // Handle Register Form
     const handleRegister = (data) => {
         // console.log('form data', data);
@@ -26,7 +28,7 @@ const Register = () => {
                 const user = result.user;
                 // console.log(user);
                 handleProfileUpdate(name, email);
-                toast.success(`${name} your account created successfully.`);
+                setUserEmail(email);
                 navigate(from, { replace: true });
                 reset();
 
@@ -46,34 +48,11 @@ const Register = () => {
         }
         updateUserProfile(profile)
             .then(() => {
-                // saveUserToDB(name, email, role);
+                saveUserToDB(name, email);
             })
             .catch(err => console.error(err));
     }
 
-    // TODO Save User to the Database
-    // // Save user to the Database
-    // const saveUserToDB = (name, email, role = 'job_seeker') => {
-    //     const user = {
-    //         name,
-    //         email,
-    //         role
-    //     };
-    //     fetch('https://resale-ecommerce-server.vercel.app/users', {
-    //         method: 'POST',
-    //         body: JSON.stringify(user),
-    //         headers: {
-    //             'content-type': 'application/json'
-    //         },
-    //     })
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             // console.log(data);
-    //             toast.success(`${name} your ${role} account created successfully.`);
-    //             setUserEmail(email);
-    //             navigate(from, { replace: true });
-    //         })
-    // }
     return (
         <section className='register'>
             <div className="container">

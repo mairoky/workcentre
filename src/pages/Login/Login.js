@@ -5,8 +5,9 @@ import { AuthContext } from '../../context/AuthProvider';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FaGoogle } from 'react-icons/fa';
 import LoginImage from '../../assets/images/process-01.png';
-import './Login.css';
 import { toast } from 'react-hot-toast';
+import { saveUserToDB } from '../../utilities/saveUserToDB';
+import './Login.css';
 
 const Login = () => {
     // Get Auth Context Data
@@ -47,7 +48,9 @@ const Login = () => {
         socialLogin(googleProvider)
             .then(result => {
                 const user = result.user;
-                // saveUserToDB(user?.displayName, user?.email);
+                saveUserToDB(user?.displayName, user?.email);
+                setLoginUserEmail(user?.email);
+                navigate(from, { replace: true });
             })
             .catch(err => console.error(err))
     }
@@ -80,7 +83,7 @@ const Login = () => {
                                     </div>
                                     <hr />
                                     <div className="text-center">
-                                        <Link onClick={handleGoogleLogIn} className="w-50 btn btn-general"><FaGoogle /> Login with Google</Link>
+                                        <Link onClick={handleGoogleLogIn} className="w-50 btn btn-general"><FaGoogle /> Google</Link>
                                     </div>
                                 </div>
                             </form>
