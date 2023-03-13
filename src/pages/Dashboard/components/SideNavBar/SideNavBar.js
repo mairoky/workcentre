@@ -2,10 +2,11 @@ import React from 'react';
 import { MdDashboard, MdDesignServices, MdSettings, MdMessage, MdVideoCall, MdLogout, MdList, MdChecklist, MdPersonPin } from 'react-icons/md'
 import { FaUser } from 'react-icons/fa'
 import './SideNavBar.scss';
+import { Link } from 'react-router-dom';
 
 const SideNavBar = () => {
     return (
-        <div className="sidenavbar">
+        <div className='sidenavbar'>
             <div className="top">
                 <span className='logo'>WorkCentre</span>
             </div>
@@ -14,47 +15,52 @@ const SideNavBar = () => {
                     <p className="title">MAIN</p>
                     <li>
                         <MdDashboard className='icon' />
-                        <span>Dashboard</span>
+                        <Link to='/dashboard'><span>Dashboard</span></Link>
                     </li>
                     <li>
                         <FaUser className='icon' />
-                        <span>Users</span>
+                        <Link to='/dashboard/all-users'><span>Users</span></Link>
                     </li>
                     <li>
                         <MdSettings className='icon' />
-                        <span>Settings</span>
+                        <Link to='/dashboard/settings'><span>Settings</span></Link>
                     </li>
                     <p className="title">WORK</p>
                     <li>
                         <MdDesignServices className='icon' />
-                        <span>Services</span>
+                        <Link to='/dashboard/services'><span>Services</span></Link>
                     </li>
                     <li>
                         <MdList className='icon' />
-                        <span>Application</span>
+                        <Link to='/dashboard/all-application'><span>Application</span></Link>
+
                     </li>
                     <li>
                         <MdChecklist className='icon' />
-                        <span>Selected</span>
+                        <Link to='/dashboard/selected-candidate'><span>Selected</span></Link>
+
                     </li>
                     <p className="title">CONTACT</p>
                     <li>
                         <MdMessage className='icon' />
-                        <span>Message</span>
+                        <Link to='/dashboard/message'><span>Message</span></Link>
+
                     </li>
                     <li>
                         <MdVideoCall className='icon' />
-                        <span>Meeting Request</span>
+                        <Link to='/dashboard/meeting-request'><span>Meeting Request</span></Link>
                     </li>
 
                     <p className="title">USER</p>
                     <li>
                         <MdPersonPin className='icon' />
-                        <span>Profile</span>
+                        <Link to='/dashboard/profile'><span>Profile</span></Link>
+
                     </li>
                     <li>
                         <MdLogout className='icon' />
-                        <span>Logout</span>
+                        <Link><span>Logout</span></Link>
+
                     </li>
                 </ul>
             </div>

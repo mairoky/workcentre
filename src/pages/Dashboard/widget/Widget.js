@@ -2,7 +2,8 @@ import React from 'react';
 import { MdKeyboardArrowUp, MdPersonOutline } from 'react-icons/md';
 import './Widget.scss';
 
-const Widget = () => {
+const Widget = ({ type }) => {
+    console.log(type);
     return (
         <div className='widget'>
             <div className="left">

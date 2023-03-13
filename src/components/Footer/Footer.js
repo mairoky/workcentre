@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className="row row row-cols-1 row-cols-sm-2 row-cols-md-4 py-2 my-2">
                         <div className="col mb-3">
                             <h5 className='d-flex align-items-center mb-2'>Work Centre Ltd</h5>
-                            <p>With a focus on customer service, the best visa consultancy firm out there.</p>
+                            <p>With a focus on customer service, the best Recruiting Service out there.</p>
                         </div>
                         <div className="col mb-3">
                             <h5>Navigation</h5>
@@ -25,10 +25,10 @@ const Footer = () => {
                         <div className="col mb-3">
                             <h5>Services</h5>
                             <ul className='nav flex-column'>
-                                <li className='nav-item mb-2'><Link>Student Visa</Link></li>
-                                <li className='nav-item mb-2'><Link>Medical Visa</Link></li>
-                                <li className='nav-item mb-2'><Link>Tourist Visa</Link></li>
-                                <li className='nav-item mb-2'><Link>Residence Visa</Link></li>
+                                <li className='nav-item mb-2'><Link>Hospitality Management</Link></li>
+                                <li className='nav-item mb-2'><Link>Health Care</Link></li>
+                                <li className='nav-item mb-2'><Link>Retail & Accounting</Link></li>
+                                <li className='nav-item mb-2'><Link>Event Management</Link></li>
                             </ul>
                         </div>
                         <div className="col mb-3">

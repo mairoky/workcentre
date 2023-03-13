@@ -12,6 +12,22 @@
         align-items: center;
         justify-content: space-between;
 
+        .dashboard-menu {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+
+            &:hover {
+                background-color: antiquewhite;
+                cursor: pointer;
+            }
+        }
+
         .search {
             display: flex;
             align-items: center;

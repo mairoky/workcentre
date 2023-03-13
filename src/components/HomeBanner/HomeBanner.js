@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import HomeBannerImage from '../../assets/images/home/img-banner.png';
 import './HomeBanner.css';
@@ -12,8 +13,10 @@ const HomeBanner = () => {
                         <div className="home-banner-content">
                             <p className='mb-0 p-2 d-inline-block home-p1 rounded'>Find your dream jobs with Work Centre Ltd.</p>
                             <h1 className='fw-bold'>The Most Reliable <span>Recruiting Service</span> Agency</h1>
-                            <p>Find The Best & Reliable Job Opportunity with us and Leveling up your Skill. This is the Easiest Way to Get Your New Dream Job.</p>
-                            <button className='btn-general fw-semibold'>Talk to Us</button>
+                            <p>Find The Best & Reliable Job Opportunity with us. This is the Easiest Way to Get Your New Dream Job.</p>
+                            <Link to='/contact'>
+                                <button className='btn-general fw-semibold'>Talk to Us</button>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-md-5 col-12">

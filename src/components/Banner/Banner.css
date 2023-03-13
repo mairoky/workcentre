@@ -1,13 +1,8 @@
 section.banner {
     width: 100%;
     height: 75vh;
-    background: rgb(20, 85, 99);
-    background: linear-gradient(45deg, #145463, #706345, #3c3c3a, #535438, #343c24, #1c1c1c);
-    background: -webkit-linear-gradient(45deg, #145463, #706345, #3c3c3a, #535438, #343c24, #1c1c1c);
-    background: -moz-linear-gradient(45deg, #145463, #706345, #3c3c3a, #535438, #343c24, #1c1c1c);
-    background-size: 600% 100%;
-    animation: gradient 16s linear infinite;
-    animation-direction: alternate;
+    background: linear-gradient(120deg, #4B0000 0%, #000000 100%), linear-gradient(300deg, #1E0000 0%, #0038FF 100%, #0038FF 100%), linear-gradient(65deg, #00FFFF 0%, #FF00A8 100%), linear-gradient(185deg, #FF0000 10%, #1400FF 95%), radial-gradient(100% 140% at 100% 0%, #00A3FF 0%, #C10097 100%);
+    background-blend-mode: color-dodge, overlay, difference, color-dodge, normal;
     color: var(--primary-color);
 }
 

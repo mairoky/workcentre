@@ -1,9 +1,13 @@
 .sidenavbar {
-    flex: 1;
+    // flex: 1;
+    width: 200px;
     background-color: aliceblue;
     border-right: 0.5px solid #dadada;
     min-height: 100vh;
-    background-color: white;
+    position: fixed;
+    left: -200px;
+    top: 0;
+    transition: all 0.3s;
 
     .top {
         height: 50px;
@@ -40,6 +44,7 @@
                 align-items: center;
                 padding: 5px;
                 cursor: pointer;
+                transition: var(--transition);
 
                 &:hover {
                     background-color: #ece8ff;

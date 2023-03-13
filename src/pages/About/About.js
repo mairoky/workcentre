@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
     const heading = "About Us";
-    const shortDes = "We Solve men power Problems with Most Efficiency.";
+    const shortDes = "We Solve Men Power Problems with Most Efficiency";
     return (
         <div>
             <Banner heading={heading} shortDes={shortDes} />

@@ -14,7 +14,8 @@ const ContactSection = () => {
                         <div className="contact-left">
                             <h2>Get<br />In <strong>Touch</strong></h2>
                             <p>Need to book an appointment or an emergency help? Get in touch with us now and our representative will help you soon.</p>
-                            <div className="contact-info my-5">
+                            <p>If you're talented and looking for a job or If you're looking for talent, contact us here:</p>
+                            <div className="contact-info my-4">
                                 <h4>Let's Talk</h4>
                                 <p className='mb-0'>
                                     <HiOutlineMail /> info@workcentreltd.co.uk

@@ -9,6 +9,7 @@ import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import Services from "../pages/Services/Services";
+import Submitcv from "../pages/SubmitCV/Submitcv";
 import ProtectedRoutes from "./ProtectedRoutes";
 
 export const router = createBrowserRouter([
@@ -31,6 +32,10 @@ export const router = createBrowserRouter([
             {
                 path: '/contact',
                 element: <Contact />
+            },
+            {
+                path: '/submit-cv',
+                element: <Submitcv />
             },
             {
                 path: '/login',

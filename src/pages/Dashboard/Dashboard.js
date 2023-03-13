@@ -6,12 +6,11 @@ const Dashboard = () => {
     return (
         <div className='dashboard'>
             <div className="widgets">
-                <Widget />
-                <Widget />
-                <Widget />
-                <Widget />
+                <Widget type="users" />
+                <Widget type="application" />
+                <Widget type="selected" />
+                <Widget type="meeting Request" />
             </div>
-
         </div>
     );
 };

@@ -54,7 +54,6 @@ const ServicesSection = () => {
             "service_image": `${Event}`
         }
     ];
-    console.log(services);
 
     return (
         <section className='home-services'>

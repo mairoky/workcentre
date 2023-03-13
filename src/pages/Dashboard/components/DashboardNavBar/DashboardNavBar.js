@@ -1,12 +1,16 @@
 import React from 'react';
 import { MdOutlineSearch, MdOutlineList, MdChatBubbleOutline, MdOutlineNotificationsNone, MdOutlineFullscreenExit, MdOutlineDarkMode } from 'react-icons/md';
 import Avatar from '../../../../assets/images/team/team-1.jpg';
+import { FaBars } from 'react-icons/fa';
 import './DashboardNavBar.scss';
 
-const DashboardNavBar = () => {
+const DashboardNavBar = ({ toggleSidebar }) => {
     return (
         <div className='dashboard-navbar'>
             <div className="wrapper">
+                <div className='dashboard-menu' onClick={toggleSidebar}>
+                    <FaBars className='menu-icon' size={20} style={{ color: '#313131' }} />
+                </div>
                 <div className="search">
                     <input type="text" placeholder='Search...' />
                     <MdOutlineSearch />

@@ -37,7 +37,7 @@ const FeaturesSection = () => {
                             </div>
                             <div className="feature-btn mt-3">
                                 <Link to='/contact' className='btn btn-general fw-semibold me-3'>Start Consultation</Link>
-                                <Link className='btn btn-outline-dark fw-semibold'>Apply Now <FaArrowRight /></Link>
+                                <Link to='application-form' className='btn btn-outline-dark fw-semibold'>Apply Now <FaArrowRight /></Link>
                             </div>
                         </div>
                     </div>
