@@ -34,7 +34,7 @@ export const router = createBrowserRouter([
                 element: <Contact />
             },
             {
-                path: '/submit-cv',
+                path: '/apply',
                 element: <Submitcv />
             },
             {

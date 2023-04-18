@@ -18,7 +18,7 @@ const RegisterCta = () => {
                             </div>
                         </div>
                         <div className="col-lg-5 col-md-12 col-12 text-lg-end text-center">
-                            <Link to='/application-form' className="btn btn-general-outline fw-semibold">Apply Now</Link>
+                            <Link to='/apply' className="btn btn-general-outline fw-semibold">Submit your CV</Link>
                         </div>
                     </div>
                 </div>
