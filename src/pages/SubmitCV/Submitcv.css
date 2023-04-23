@@ -1,0 +1,31 @@
+div.submit-cv {
+    background: var(--primary-color);
+}
+
+section.application-form .card {
+    background: radial-gradient(circle at 18.7% 37.8%, #f0f0f0 0%, #cebb85 90%);
+}
+
+section.application-form .card form input,
+section.application-form .card form select {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: 0 1px 0 0 var(--secondary-color);
+}
+
+section.application-form .card form input {
+    height: 25px;
+    color: #1c1c1c;
+    transition: height 1s;
+}
+
+section.application-form .card form input:focus {
+    height: 50px;
+}
+
+section.application-form .card form select:focus,
+section.application-form .card form select:active {
+    outline: none;
+    box-shadow: none;
+}

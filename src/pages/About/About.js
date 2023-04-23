@@ -16,12 +16,12 @@ const About = () => {
             <section className='about'>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-4 col-md-6">
+                        <div className="col-lg-3 col-md-6">
                             <div className="about-left">
                                 <h2>A Short<br /><strong>Story About Us</strong></h2>
                             </div>
                         </div>
-                        <div className="col-lg-8 col-md-6">
+                        <div className="col-lg-9 col-md-6">
                             <div className="about-right">
                                 <p>Whether you are looking at what’s next for your career or have an immediate gap to fill, as market leader we remain committed to working together with you. Our recruiting experts offer invaluable advice and insights, combined with unrivalled services and access to the top employers and talent. As your lifelong career partner, we’ll support your skills development and help you to navigate the new era of work.</p>
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odio ad alias saepe error tempore, officia architecto eum, sint fuga placeat temporibus numquam.</p>
@@ -32,7 +32,7 @@ const About = () => {
                     <div className="row mt-5">
                         <div className="col-md-6 d-flex align-items-lg-center">
                             <div className="p-3">
-                                <h2 className='fw-semibold text-center'>Our Values</h2>
+                                <h2 className='fw-semibold'>Our Values</h2>
                                 <div className="values">
                                     <p><span><FaArrowAltCircleRight /></span> Consider honesty as the key to a business’ trustworthiness and integrity.</p>
                                     <p><span><FaArrowAltCircleRight /></span> Always do the right thing to solve the customer’s problem.</p>

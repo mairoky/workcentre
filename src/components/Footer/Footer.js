@@ -23,7 +23,7 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="col mb-3">
-                            <h5>Services</h5>
+                            <h5>Popular Services</h5>
                             <ul className='nav flex-column'>
                                 <li className='nav-item mb-2'><Link>Hospitality Management</Link></li>
                                 <li className='nav-item mb-2'><Link>Health Care</Link></li>

@@ -60,13 +60,15 @@ const Services = () => {
     return (
         <div>
             <Banner heading={heading} shortDes={shortDes}></Banner>
-            <section className='all-services'>
+            <div className='all-services'>
                 <div className="container">
                     <div className="row">
-
+                        <div className="col-lg-12">
+                            <h1>Services Loading</h1>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
     );
 };
