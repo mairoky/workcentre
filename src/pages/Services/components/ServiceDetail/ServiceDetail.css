@@ -1,0 +1,14 @@
+section.service {
+    background: bisque;
+    padding: 4rem 0;
+}
+
+.service-content ul.service-list li {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+}

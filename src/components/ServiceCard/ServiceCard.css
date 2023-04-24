@@ -1,13 +1,14 @@
-.home-service-card {
+.home-service-card,
+.single-service-card {
     position: relative;
     width: 100%;
     overflow: hidden;
     margin: 10px 0;
-    cursor: pointer;
     z-index: 11;
 }
 
-.home-service-card::before {
+.home-service-card::before,
+.single-service-card::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -21,15 +22,18 @@
     z-index: 12;
 }
 
-.home-service-card img {
+.home-service-card img,
+.single-service-card img {
     transition: transform 0.35s ease-out;
 }
 
-.home-service-card:hover img {
+.home-service-card:hover img,
+.single-service-card:hover img {
     transform: scale(1.09);
 }
 
-.home-service-info {
+.home-service-info,
+.single-service-info {
     position: absolute;
     z-index: 13;
     width: auto;

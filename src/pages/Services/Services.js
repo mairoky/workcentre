@@ -1,6 +1,5 @@
 import React from 'react';
 import Banner from '../../components/Banner/Banner';
-
 import Admin from '../../assets/images/services/admin.jpg';
 import Factory from '../../assets/images/services/factory.jpg';
 import Healthcare from '../../assets/images/services/healthcare.jpg';
@@ -9,6 +8,7 @@ import It from '../../assets/images/services/it.jpg';
 import Retail from '../../assets/images/services/retail.jpg';
 import Security from '../../assets/images/services/security.jpg';
 import Event from '../../assets/images/services/event.jpg';
+import SingleService from './components/SingleService/SingleService';
 
 const Services = () => {
     const heading = "Services We Provide";
@@ -60,12 +60,12 @@ const Services = () => {
     return (
         <div>
             <Banner heading={heading} shortDes={shortDes}></Banner>
-            <div className='all-services'>
+            <div className='all-services py-5'>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-12">
-                            <h1>Services Loading</h1>
-                        </div>
+                        {
+                            services.map(service => <SingleService key={service?.id} service={service} />)
+                        }
                     </div>
                 </div>
             </div>
