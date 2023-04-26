@@ -26,16 +26,16 @@ const Submitcv = () => {
             <section className='application-form'>
                 <div className="container">
                     <div className="row">
-                        <div className="m-auto col-10">
+                        <div className="m-auto col-lg-10 col-12">
                             <div className="card">
-                                {/* <div className="text-center">
-                                    <h4>Job Application</h4>
-                                    <h1>Start Your Career Today</h1>
-                                    <p>Please fill in your information and send it to us.</p>
-                                </div> */}
                                 <form onSubmit={handleSubmit(handleSubmitCV)}>
                                     <div className="card-body">
-                                        <div className="form-group mt-2">
+                                        <div className="text-center mt-2">
+                                            <span className='px-3 py-1 border rounded fw-semibold'>Job Application</span>
+                                            <h2 className='fw-semibold mt-2 mb-0'>Start Your Career Today</h2>
+                                            <p>Please fill in your information and send it to us.</p>
+                                        </div>
+                                        <div className="form-group mt-5">
                                             <label htmlFor="name">Your Name</label>
                                             <input {...register('name', {
                                                 required: "Name is Required."
@@ -81,7 +81,6 @@ const Submitcv = () => {
                                             <label htmlFor="fileUpload">Upload Your Resume</label>
                                             <Dropzone
                                                 color="#1c1c1c"
-                                                background="radial-gradient(circle at 18.7% 37.8%, #f0f0f0 0%, #cebb85 90%);"
                                                 onChange={updateFiles}
                                                 value={files}
                                                 accept=".pdf"

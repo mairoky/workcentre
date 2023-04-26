@@ -1,9 +1,7 @@
-div.submit-cv {
-    background: var(--primary-color);
-}
-
 section.application-form .card {
-    background: radial-gradient(circle at 18.7% 37.8%, #f0f0f0 0%, #cebb85 90%);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+    border: none;
+    border-radius: 8px;
 }
 
 section.application-form .card form input,
@@ -24,8 +22,6 @@ section.application-form .card form input:focus {
     height: 50px;
 }
 
-section.application-form .card form select:focus,
-section.application-form .card form select:active {
+section.application-form .card form select:focus {
     outline: none;
-    box-shadow: none;
 }
